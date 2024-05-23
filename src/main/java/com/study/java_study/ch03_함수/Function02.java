@@ -13,8 +13,14 @@ public class Function02 { // 클래스 : 틀(사용설명서)
         System.out.println("num2 : " + num2);
     }
 
+    //매개변수 o, 리턴 o
     String 빙수만들기(String 재료, int count) {
         return 재료 + "빙수 : " + count + "개"; //자료형이 String 이니까 문자열로 리턴해줌
+    }
+
+    //매개변수 x, 리턴 o
+    String getData() {
+        return "데이터";
     }
 }
 /* 클래스(틀)
