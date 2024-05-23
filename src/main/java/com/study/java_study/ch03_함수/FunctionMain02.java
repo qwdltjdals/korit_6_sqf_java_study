@@ -8,7 +8,7 @@ public class FunctionMain02 {
         fx.fx01(); //호출
         fx.fx02(10, 20);
         System.out.println(fx.빙수만들기("딸기", 10)+ " 주문 완료");
-        String 빙수 = fx.빙수만들기("초코", 5);
+        String 빙수 = fx.빙수만들기("초코", 5); //return 값을 호출 한 곳 -> 빙수에 들어감
         System.out.println(빙수);
     }
 
