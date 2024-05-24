@@ -26,5 +26,17 @@ public class 조건문02 {
             System.out.println("text 이 비어있습니다.");
             return;
         }
+
+        String a = "이성민";
+        String b = new String("이성민");
+
+        if(a == "이성민") {
+            System.out.println("a 는 이성민");
+            return;
+        }
+            if(b =="이성민") {
+                System.out.println("b 는 이성민");
+                return;
+            }
     }
 }// 하나의 함수는 하나의 역할만 해야한다 : 단일책임 원칙
