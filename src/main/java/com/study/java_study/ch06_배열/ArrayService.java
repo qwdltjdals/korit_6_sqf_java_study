@@ -40,7 +40,6 @@ public class ArrayService {
                     String reName = scanner.nextLine();
                     for(int i = 0; i < names.length; i++) {
                         if(names[i].equals(reName)) {
-                            names[i] = null;
                             System.out.println("무슨 이름으로 수정하시겠습니까?");
                             String newName = scanner.nextLine();
                             names[i] = newName;
