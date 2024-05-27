@@ -40,7 +40,6 @@ public class ArrayService {
                     String reName = scanner.nextLine();
                     for(int i = 0; i < names.length; i++) {
                         if(names[i].equals(reName)) {
-                            names[i] = null;
                             System.out.println("무슨 이름으로 수정하시겠습니까?");
                             String newName = scanner.nextLine();
                             names[i] = newName;
@@ -56,18 +55,9 @@ public class ArrayService {
                     System.out.println("삭제 할 이름 : ");
                     String delName = scanner.nextLine();
                     for(int i = 0; i < names.length; i++) {
-                        if(names[i].equals(delName)) {
-                            names[i] = null;
-                            String[] delNames = new String[names.length - 1];
-                            for(int j = 0; j < names.length; j++) {
-                                delNames[j] = names[i];
-                            }
-                            names = delNames;
-                            System.out.println("이름이 삭제되었습니다.");
-                            break;
+                        if (names[i].equals(delName)) {
+
                         }
-                        System.out.println("이름 입력이 잘못되었습니다.");
-                        break;
                     }
                     break;
                 case "4":
