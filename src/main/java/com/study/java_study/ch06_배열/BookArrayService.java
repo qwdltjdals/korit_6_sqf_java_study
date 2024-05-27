@@ -47,7 +47,7 @@ public class BookArrayService {
                     }
                     System.out.println("새 이름 : ");
                     books[findIndex] = scanner.nextLine();
-                    System.out.println(modifyBook + " 로 수정 완료!");
+                    System.out.println("수정 완료!");
                     System.out.println();
                     break;
                 case "3":
@@ -59,7 +59,18 @@ public class BookArrayService {
                         System.out.println("해당 도서는 없는 도서입니다.");
                         break;
                     }
-
+                    newBook = new String[books.length - 1];
+                    for(int i = 0; i < books.length; i++) {
+                        if (findIndex > i) {
+                            newBook[i] = books[i];
+                            continue;
+                        }
+                        newBook[i] = books[i + 1];
+                    }
+                    books = newBook;
+                    System.out.println("해당 도서를 삭제하였습니다.");
+                    System.out.println();
+                    break;
                 case "4":
                     System.out.println("[도서 조회]");
                     System.out.println("조회할 도서 : ");
