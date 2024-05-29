@@ -61,12 +61,24 @@ public class CafeRepository {
                 }
                 break;
             case 2:
+                for(CafeEntity menu : cafe) {
+                    if (menu.getBase().contains(text)) {
+                        newArraySize++;
+                    }
+                }
                 break;
             case 3:
-                break;
-            case 4:
-
+                for(CafeEntity menu : cafe) {
+                    if (menu.getName().contains(text)) {
+                        newArraySize++;
+                    }
+                }
         }
         return newArraySize;
     }
+
+//    public CafeEntity[] searchCafeMenu(int menuCase, String searchText) {
+//
+//    }
+
 }
