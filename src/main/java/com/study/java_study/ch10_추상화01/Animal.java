@@ -1,4 +1,4 @@
-package com.study.java_study.ch10_추상화;
+package com.study.java_study.ch10_추상화01;
 
 public class Animal { // 추상클래스 : 같은 것들(공통사항)을 묶어준다
 
