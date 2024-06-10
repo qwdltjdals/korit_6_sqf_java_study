@@ -22,6 +22,8 @@ public class StreamMain {
             3. sorted(Comparator)
 
             최종(결과) 절차
+            1. collect -> stream을 list 변환
+            2. 반복자 -> forEach
          */
 
 
@@ -84,7 +86,8 @@ public class StreamMain {
 
         phoneList.stream()
                 .sorted((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getModel(), o2.getModel()))
-                .forEach(phone -> System.out.println(phone));
+                //.forEach(phone -> System.out.println(phone))
+                .forEach(System.out :: println);
 
     }
 }
